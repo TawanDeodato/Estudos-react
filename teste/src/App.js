@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld'
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
       <h1>Alterando o {name}</h1>
       <h4>Olá, me chamo {newName}</h4>
       <img src={img} alt="Imagem 150x150" />
+
+      <HelloWorld />
     </div>
   );
 }
