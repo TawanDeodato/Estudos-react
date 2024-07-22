@@ -1,6 +1,7 @@
 import './App.css';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/pessoa';
+import List from './components/List';
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
       <SayMyName nome="Paulo" />
       <SayMyName nome={nome} />
       <Pessoa nome="Rodrigo" idade="29" profissao="Progamador" foto="https://via.placeholder.com/150" />
+
+      <List />
     </div>
   );
 }
