@@ -1,3 +1,5 @@
+import Button from "./Button"
+
 function Evento() {
     function meuEvento() {
         window.alert("Botão ativado")
@@ -6,7 +8,7 @@ function Evento() {
     return (
         <div>
             <p>CLique para disparar um evento</p>
-            <button onClick={meuEvento}>Ativar!</button>
+            <Button event={meuEvento} text="Primeiro evento" />
         </div>
     )
 }
