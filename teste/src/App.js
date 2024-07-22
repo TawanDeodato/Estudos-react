@@ -1,10 +1,12 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld'
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/pessoa';
 
 function App() {
 
   const name = "JSX"
   const newName = "Tawan".toUpperCase()
+  const nome = "José"
   const img = 'https://via.placeholder.com/150'
 
   return (
@@ -13,7 +15,9 @@ function App() {
       <h4>Olá, me chamo {newName}</h4>
       <img src={img} alt="Imagem 150x150" />
 
-      <HelloWorld />
+      <SayMyName nome="Paulo" />
+      <SayMyName nome={nome} />
+      <Pessoa nome="Rodrigo" idade="29" profissao="Progamador" foto="https://via.placeholder.com/150" />
     </div>
   );
 }
